@@ -1,5 +1,5 @@
 /* ==== Google font ==== */
-@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
+@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Arimo:400|Merriweather:400italic');
 
 
 body {
@@ -23,8 +23,8 @@ h4,
 h5,
 h6 {
     margin: 0 0 30px;
-    text-transform: uppercase;
-    font-family: Montserrat,sans-serif;
+    /*text-transform: /*uppercase*/
+    font-family: Arimo,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -195,7 +195,7 @@ hr {
 
 .gn-menu-main > li > a {
 		padding: 0 30px;
-		text-transform: uppercase;
+		/*text-transform: /*uppercase*/;*/
 		letter-spacing: 1px;
 		font-weight: bold;
 }
@@ -497,7 +497,7 @@ input.gn-search:focus {
 	font-family: Montserrat, sans-serif;
 	background-color: rgba(0, 0, 0, 0);
 	text-decoration: none;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	border-width: 0px;
 	border-color: #000;
 	border-style: none;
@@ -605,7 +605,7 @@ input.gn-search:focus {
 form#contact-form .form-group label {
 	text-align: left !important;
 	display: block;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	letter-spacing: 1px;
 	font-size: 12px;
 }
@@ -710,7 +710,7 @@ footer a:hover {
 
 .btn {
 	border-radius: 0;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: Montserrat,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
