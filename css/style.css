@@ -1,7 +1,6 @@
 /* ==== Google font ==== */
 @import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Arimo:400|Merriweather:400italic');
 
-
 body {
     width: 100%;
     height: 100%;
@@ -429,7 +428,7 @@ input.gn-search:focus {
 		height: 60px
 }
 
-@media screen and (max-width: 422px) { 
+@media screen and (max-width: 422px) {
 	.gn-menu-wrapper.gn-open-all {
 			-webkit-transform: translateX(0px);
 			-moz-transform: translateX(0px);
@@ -454,7 +453,7 @@ input.gn-search:focus {
 	position:relative;
 }
 
-#intro{	
+#intro{
 	background-image: url(../img/img-bg.jpg);
 	background-size: cover;
 }
@@ -462,7 +461,7 @@ input.gn-search:focus {
 .intro .slogan {
 	padding:250px 0 60px;
 	text-align: center;
-	
+
 }
 .intro .slogan h1 {
 	color: #fff;
@@ -518,6 +517,11 @@ input.gn-search:focus {
 	padding: 20px;
 }
 
+.boxed-grey2 {
+  background: #eee;
+  padding: 20px;
+}
+
 .team h5 {
 	margin-bottom: 10px;
 }
@@ -533,7 +537,7 @@ input.gn-search:focus {
 .team-social {
 	margin-left: 0;
 	padding-left: 0;
-	
+
 }
 
 .team-social {
@@ -585,7 +589,7 @@ input.gn-search:focus {
 
 .service-icon {
 	margin-bottom: 20px;
-}	
+}
 
 
 
@@ -689,7 +693,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 footer {
 	text-align: center;
 	padding: 50px 0 ;
-	
+
 }
 
 footer p {
@@ -777,7 +781,7 @@ footer a:hover {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -794,7 +798,7 @@ footer a:hover {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -909,7 +913,7 @@ footer a:hover {
     .brand-heading {
         font-size: 100px;
     }
-	
+
     .intro-text {
         font-size: 25px;
     }
@@ -917,26 +921,26 @@ footer a:hover {
 
 }
 @media (max-width:768px) {
-	
+
 	.team.boxed-grey {
 		margin-bottom: 30px;
 	}
-	
+
 	.boxed-grey {
 		margin-bottom: 30px;
 	}
 	.intro .slogan {
 		padding:100px 0 60px;
-		
+
 	}
-	
+
 }
 
 @media (max-width:480px) {
 
 	.intro .slogan {
 		padding:170px 0 60px;
-		
+
 	}
-	
+
 }
