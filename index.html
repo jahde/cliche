@@ -17,9 +17,20 @@
 	<link href="css/nivo-lightbox.css" rel="stylesheet" />
 	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
 	<link href="css/animate.css" rel="stylesheet" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
+  	
     <!-- Squad theme CSS -->
     <link href="css/style.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
+
+	 <style>
+ 	 	#draggable { 
+ 	 		width: 301px; 
+ 	 		height: 283px; 
+ 	 		/*padding: 0.5em; */}
+  		</style>
+  	
 
 </head>
 
@@ -172,8 +183,16 @@
 			</div>
 			</div>
 		</div>
+		<div class="container" >
+				<div class="row pull-right" style="margin:0 50px 50px 0">
+			        <div class="search">
+					<input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
+					 <button type="submit" class="btn btn-primary btn-sm">Search</button>
+			</div>
+				</div>
 		<div class="container">
-
+			
+</div>
         <div class="row">
             <div class="col-xs-6 col-sm-3 col-md-3">
 
@@ -298,24 +317,93 @@
 	</section>
 	<!-- /Section: works -->
 
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+<div id="draggable" class="ui-widget-content">
+
+  <img src='/img/celebs/drake-4edit.png' alt="">
+</div>
+
+
+
   <!-- Load Feather code -->
   <script type="text/javascript" src="http://feather.aviary.com/js/feather.js"></script>
 
+<!--   <canvas id="canvas" width=300 height=300></canvas> -->
+ 
+  <img src='/img/backgrounds/frame-4edit.png' alt="">
 
+ 
 
-  <canvas id="canvas" width=300 height=300></canvas>
 
   <!-- Instantiate Feather -->
   <script type='text/javascript'>
 
 
-  var canvas = document.getElementById('canvas');
-  var ctx = canvas.getContext('2d');
+  // var canvas = document.getElementById('canvas');
+  // var ctx = canvas.getContext('2d');
+
+  // var img = new Image();
+  // img.onload = function(){
+  //   canvas.width = img.width;
+  //   canvas.height = img.height;
+  //   ctx.drawImage(img, 0, 0, img.width, img.height);
+
+  //   var secondImg = new Image();
+  //   secondImg.onload = function(){
+  //     ctx.drawImage(secondImg, 40,40,secondImg.width,secondImg.height);
+
+  //     //window.open(canvas.toDataURL());
+  //   }
+  //   // secondImg.src = '/img/celebs/drake-4edit.jpg'
+
+  //  /* img.onload = function(){
+  //     //ctx.drawImage(img, 0, 0, img.width, img.height);
+
+
+  //     //canvas.toDataURL();
+  //   }
+  //   img.src = '/imgcelebrit'*/
+  // }
+  // img.src = '/img/backgrounds/frame-4edit.png';
+
+  //    var featherEditor = new Aviary.Feather({
+  //        apiKey: '15ca4a6fa638ce5f',
+  //        apiVersion: 3,
+  //        theme: 'dark', // Check out our new 'light' and 'dark' themes!
+  //        tools: 'all',
+  //        appendTo: '',
+  //        onSave: function(imageID, newURL) {
+  //            var img = document.getElementById(imageID);
+  //            img.src = newURL;
+  //        },
+  //        onError: function(errorObj) {
+  //            alert(errorObj.message);
+  //        }
+  //    });
+  //    function launchEditor(id, src) {
+  //        featherEditor.launch({
+  //            image: id,
+  //            url: src
+  //        });
+  //       return false;
+  //    }
+  </script>
+
+<canvas id="canvas2" width=300 height=300></canvas>
+
+  <!-- Instantiate Feather -->
+  <script type='text/javascript'>
+
+
+  var canvas2 = document.getElementById('canvas2');
+  var ctx = canvas2.getContext('2d');
 
   var img = new Image();
   img.onload = function(){
-    canvas.width = img.width;
-    canvas.height = img.height;
+    canvas2.width = img.width;
+    canvas2.height = img.height;
     ctx.drawImage(img, 0, 0, img.width, img.height);
 
     var secondImg = new Image();
@@ -324,7 +412,7 @@
 
       //window.open(canvas.toDataURL());
     }
-    secondImg.src = '/img/celebs/drake-4edit.jpg'
+    // secondImg.src = '/img/celebs/drake-4edit.png'
 
    /* img.onload = function(){
       //ctx.drawImage(img, 0, 0, img.width, img.height);
@@ -335,12 +423,6 @@
     img.src = '/imgcelebrit'*/
   }
   img.src = '/img/backgrounds/frame-4drake.png';
-
-
-
-
-
-
 
      var featherEditor = new Aviary.Feather({
          apiKey: '15ca4a6fa638ce5f',
@@ -364,6 +446,7 @@
         return false;
      }
   </script>
+
 
   <div id='injection_site'></div>
 
@@ -485,7 +568,28 @@
 	<script src="js/stellar.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+<script>
+  		$(function() {
+    		$( "#draggable" ).draggable();
+
+
+  		});
+
+		 $(function(){
+		  $("#hide").click(function(){
+		    $("#canvas").hide();
+		  });
+		  $("#show").click(function(){
+		    $("#canvas").show();
+		  });
+		});
+  </script>
+
+
 
 </body>
 
 </html>
+
